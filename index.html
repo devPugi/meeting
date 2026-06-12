@@ -156,15 +156,44 @@
     .sec{padding:54px 0} .hero{padding:48px 0 40px}
     body{background:#fff} .inv,.motion{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   }
-  @media(max-width:860px){
-    .wrap{padding:0 24px}
+  /* TABLET */
+  @media(max-width:1024px){
+    .wrap{padding:0 32px}
+    .sec{padding:84px 0}
+    .items.c4,.motion-grid{grid-template-columns:repeat(2,1fr)}
+    .stats{grid-template-columns:repeat(4,1fr)}
+  }
+  /* MOBILE */
+  @media(max-width:760px){
+    .wrap{padding:0 20px}
+    .nav .wrap{height:54px}
+    .navlogo{height:15px}
     .items.c2,.items.c3,.items.c4,.stats,.cols,.motion-grid,.closegrid{grid-template-columns:1fr!important}
     .didgrid,.placegrid{grid-template-columns:repeat(2,1fr)}
-    .hero .meta{grid-template-columns:1fr;gap:18px}
+    .hero{padding:80px 0 60px}
+    .hero .meta{grid-template-columns:1fr;gap:16px}
+    .hero .meta .v{font-size:14px}
     .def{grid-template-columns:1fr;gap:6px}
-    .sec{padding:68px 0}
-    .motion{padding:40px 28px 44px}
-    .kpi .item{grid-template-columns:1fr}
+    .sec{padding:58px 0}
+    .sechead{margin-bottom:14px}
+    .lead{font-size:16px}
+    .motion{padding:32px 22px 36px}
+    .kpi .item{grid-template-columns:1fr;gap:10px}
+    .closegrid{gap:36px}
+    .brandline{flex-direction:column;gap:8px}
+    /* table fits without horizontal scroll */
+    table{table-layout:fixed;width:100%}
+    thead th{font-size:10px;padding:0 8px 12px 0}
+    tbody td{font-size:12.5px;padding:15px 8px 15px 0;word-break:keep-all;overflow-wrap:anywhere}
+    td.cost{white-space:normal}
+    tbody tr.total td.cost{font-size:16px}
+  }
+  /* SMALL PHONE */
+  @media(max-width:430px){
+    .wrap{padding:0 16px}
+    .didgrid,.placegrid{grid-template-columns:1fr}
+    .stat .n{font-size:44px}
+    .item{padding:24px 0 6px 0}
   }
 </style>
 </head>
@@ -199,8 +228,8 @@
     <h2 class="h2 reveal">개원 3개월 차,<br>세 가지 과제</h2>
     <div class="items c3 reveal">
       <div class="item">
-        <div class="n">01</div><h3>마케팅 효율 저하</h3>
-        <p>홈페이지·인스타·블로그 등 현재 채널 대비 유입·전환 성과가 기대에 미치지 못함</p>
+        <div class="n">01</div><h3>마케팅 방향성 전환 필요</h3>
+        <p>홈페이지·인스타·블로그 등 기존 채널을 넘어, 영상 콘텐츠 중심의 새로운 마케팅 축으로 전환이 필요한 시점</p>
       </div>
       <div class="item">
         <div class="n">02</div><h3>브랜드 톤앤매너 불일치</h3>
@@ -288,7 +317,7 @@
     <div class="items c4 reveal">
       <div class="item">
         <div class="n">01</div><h3>유튜브 콘텐츠</h3>
-        <p>롱폼 4편 + 숏폼 10편/월. 중지 채널 재가동, 원장 전문성 자산화</p>
+        <p>숏폼 주도 발행(월 10편)으로 노출 확대 + 롱폼 본편(월 4편)으로 신뢰 축적. 중지 채널 재가동</p>
       </div>
       <div class="item">
         <div class="n">02</div><h3>브랜딩 영상</h3>
@@ -301,6 +330,32 @@
       <div class="item">
         <div class="n">04</div><h3>원내 DID 영상</h3>
         <p>대기실·데스크 모션 사이니지, 진료 안내·브랜드 메시지 노출</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 영상 운영 전략 (롱폼/숏폼/팬 마케팅) -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sechead reveal"><span class="idx">—</span><span class="eyebrow">Video Strategy</span></div>
+    <h2 class="h2 reveal">롱폼은 신뢰,<br>숏폼은 노출</h2>
+    <p class="lead reveal"><b>숏폼 발행 비중을 높여</b> 노출을 빠르게 키우고, 롱폼으로 전문성과 신뢰를 다집니다. 반복 노출로 잠재 환자를 ‘팬’으로 만드는 <b>팬 마케팅</b>을 지향합니다.</p>
+    <div class="items c3 reveal">
+      <div class="item">
+        <div class="n">01</div><div class="period">숏폼 · 노출</div>
+        <h3>발행 비중 최우선</h3>
+        <p>쇼츠·릴스 중심으로 발행량을 늘려 신규 도달과 유입을 빠르게 확대하는 운영의 핵심 축</p>
+      </div>
+      <div class="item">
+        <div class="n">02</div><div class="period">롱폼 · 신뢰</div>
+        <h3>전문성 자산화</h3>
+        <p>원장 인터뷰·진료 설명 본편으로 깊이 있는 정보를 전달해 ‘검증된 전문의’ 신뢰를 축적</p>
+      </div>
+      <div class="item">
+        <div class="n">03</div><div class="period">팬 마케팅 · 관계</div>
+        <h3>팬·단골 형성</h3>
+        <p>숏폼의 지속·반복 노출로 호감과 친밀감을 쌓아 팬을 만들고, 재방문·소개 환자로 연결</p>
       </div>
     </div>
   </div>
@@ -374,30 +429,31 @@
 <section class="sec">
   <div class="wrap">
     <div class="sechead reveal"><span class="idx">05</span><span class="eyebrow">Content</span></div>
-    <h2 class="h2 reveal">영상 콘텐츠 기획 방향</h2>
+    <h2 class="h2 reveal">진료가 아니라,<br>사람으로 다가가기</h2>
+    <p class="lead reveal">진료 정보 나열 대신, <b>원장님의 일상과 솔직한 리액션</b>으로 시청자가 공감하는 콘텐츠를 만듭니다. 전문성은 자연스럽게 녹여 신뢰로 연결합니다.</p>
     <div class="cols reveal">
       <div class="col">
-        <div class="dept">소아치과</div><div class="doc">이정현 대표원장</div>
+        <div class="dept">원장 일상 · 브이로그</div><div class="doc">이정현 · 안현준 대표원장</div>
         <ul>
-          <li>아이 첫 치과 방문 가이드</li>
-          <li>충치 예방 · 실란트</li>
-          <li>진료 공포 완화 (보호자 안심형)</li>
+          <li>출근·회진·진료 준비 등 진료 밖 모습</li>
+          <li>취미 · 먹방 · 소소한 일상 공유</li>
+          <li>두 원장 케미 · 티키타카</li>
         </ul>
       </div>
       <div class="col">
-        <div class="dept">치과교정과</div><div class="doc">안현준 대표원장</div>
+        <div class="dept">공감 리액션 · 토픽</div><div class="doc">시청자 참여형 · 숏폼</div>
         <ul>
-          <li>교정 시작 시기 가이드</li>
-          <li>장치 종류 비교</li>
-          <li>교정 전후 관리</li>
+          <li>치과 괴담 · 미신 팩트체크</li>
+          <li>환자 사연 · 고민 리액션</li>
+          <li>유행 밈 · 챌린지 참여</li>
         </ul>
       </div>
       <div class="col">
-        <div class="dept">통합치의학과</div><div class="doc">전 연령 일반 진료</div>
+        <div class="dept">전문성 한 스푼</div><div class="doc">신뢰 보조축 · 롱폼</div>
         <ul>
-          <li>정기검진 · 구강관리</li>
-          <li>일반 진료 안내</li>
-          <li>원장 인터뷰 시리즈</li>
+          <li>진료 토픽을 짧고 쉽게</li>
+          <li>자주 묻는 궁금증 Q&amp;A</li>
+          <li>본편으로 깊이 있게 (신뢰)</li>
         </ul>
       </div>
     </div>
@@ -440,7 +496,7 @@
     <div class="items c2 kpi reveal">
       <div class="item">
         <div class="n">01</div>
-        <div><h3>영상 조회 · 도달</h3><div class="m">측정 — 유튜브 · SNS 인사이트</div><div class="t">목표 — 운영 협의 후 설정</div></div>
+        <div><h3>노출 · 도달 · 팬</h3><div class="m">측정 — 숏폼 조회수 · 구독/팔로워 증가</div><div class="t">목표 — 운영 협의 후 설정</div></div>
       </div>
       <div class="item">
         <div class="n">02</div>
